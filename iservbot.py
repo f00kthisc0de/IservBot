@@ -188,23 +188,23 @@ while True:
 -------------------------------
         ''')
 
-        if tim.tm_wday == 1:
+        if tim.tm_wday == 0:
             print(c(f"Tag: Montag Uhrzeit: {tim.tm_hour}:{tim.tm_min}:{tim.tm_sec}"))
             print(c("Sie haben heute 2 Konferenzen", "green"))
 
-        elif tim.tm_wday == 2:
+        elif tim.tm_wday == 1:
             print(c(f"Tag: Dienstag Uhrzeit: {tim.tm_hour}:{tim.tm_min}:{tim.tm_sec}"))
             print(c("Sie haben heute 1 Konferenz", "green"))
 
-        elif tim.tm_wday == 3:
+        elif tim.tm_wday == 2:
             print(c(f"Tag: Mittwoch Uhrzeit: {tim.tm_hour}:{tim.tm_min}:{tim.tm_sec}"))
             print(c("Sie haben heute 2 Konferenzen","green"))
 
-        elif tim.tm_wday == 4:
+        elif tim.tm_wday == 3:
             print(c(f"Tag: Donnerstag Uhrzeit: {tim.tm_hour}:{tim.tm_min}:{tim.tm_sec}"))
             print(c("Sie haben heute 1 Konferenz", "green"))
 
-        elif tim.tm_wday == 5:
+        elif tim.tm_wday == 4:
             print(c(f"Tag: Freitag Uhrzeit: {tim.tm_hour}:{tim.tm_min}:{tim.tm_sec}"))
             print(c("Sie haben heute 1 Konferenz"))
         print()
